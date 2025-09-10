@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Testimonial Carousel</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/workspace/styles.css" />
+  </head>
+  <body>
+    <section class="testimonials" aria-label="Client testimonials">
+      <div class="container">
+        <div class="carousel" aria-roledescription="carousel">
+          <button class="nav prev" aria-label="Previous testimonial" title="Previous">
+            <span aria-hidden="true">‹</span>
+          </button>
+
+          <ul class="slides" role="group" aria-live="polite">
+            <li class="slide is-active">
+              <div class="slide__inner">
+                <div class="slide__text">
+                  <blockquote>
+                    <p>I would like to thank Shazia and the Scarsdale team. Super efficient, fast responding and knew exactly what to do in the situation I was in. Highly recommend for any immigration needs</p>
+                  </blockquote>
+                  <footer class="author">
+                    <span class="avatar" aria-hidden="true"></span>
+                    <div class="author__meta">
+                      <div class="author__name">Sherri Cronin</div>
+                      <div class="author__role">Dynamic Program Designer</div>
+                    </div>
+                  </footer>
+                  <div class="controls-row">
+                    <button class="nav small prev" aria-label="Previous testimonial">
+                      <span aria-hidden="true">‹</span>
+                    </button>
+                    <button class="nav small next" aria-label="Next testimonial">
+                      <span aria-hidden="true">›</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="slide__media">
+                  <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1200&auto=format&fit=crop" alt="Client portrait" />
+                </div>
+              </div>
+            </li>
+
+            <li class="slide">
+              <div class="slide__inner">
+                <div class="slide__text">
+                  <blockquote>
+                    <p>Working with the team has been a breeze. Their guidance was clear and they were always available. I felt confident every step of the way.</p>
+                  </blockquote>
+                  <footer class="author">
+                    <span class="avatar" aria-hidden="true"></span>
+                    <div class="author__meta">
+                      <div class="author__name">Dane Harper</div>
+                      <div class="author__role">Operations Lead</div>
+                    </div>
+                  </footer>
+                  <div class="controls-row">
+                    <button class="nav small prev" aria-label="Previous testimonial">
+                      <span aria-hidden="true">‹</span>
+                    </button>
+                    <button class="nav small next" aria-label="Next testimonial">
+                      <span aria-hidden="true">›</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="slide__media">
+                  <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=1200&auto=format&fit=crop" alt="Client portrait" />
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="dots" role="tablist" aria-label="Choose testimonial"></div>
+
+          <button class="nav next" aria-label="Next testimonial" title="Next">
+            <span aria-hidden="true">›</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="/workspace/app.js"></script>
+  </body>
+  </html>
+
